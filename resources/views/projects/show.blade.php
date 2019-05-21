@@ -1,19 +1,13 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+@extends('layouts.app')
 
-    <title>Project</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('content')
 
-</head>
-<body>
-<h1>{{$project->title}}</h1>
+    <h1>{{$project->title}}</h1>
+    <div>
+        {{$project->description}}
+    </div>
+    <div class="container">
+        <a href="/projects" class="button is-text">Go back</a>
+    </div>
 
-<div>
-    {{$project->description}}
-</div>
-
-
-</body>
-</html>
+@endsection
