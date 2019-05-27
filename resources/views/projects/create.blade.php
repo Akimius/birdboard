@@ -4,7 +4,7 @@
 
     <form method="POST" action="/projects">
         @csrf
-        <div class="container">
+        <div class="container mt-6">
             <h1 class="title">
                 Create Project
             </h1>

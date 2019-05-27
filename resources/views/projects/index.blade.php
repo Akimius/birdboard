@@ -7,17 +7,16 @@
         <a href="/projects/create" class="button is-primary">New project</a>
     </div>
 
-    <ul>
+    <div class="flex">
         @forelse($projects as $project)
-            <li>
-                <a class="" href="{{$project->path()}}">
-                    {{$project->title}}
-                </a>
-            </li>
+            <div class="bg-white mr-4 rounded shadow">
+                <h3>{{$project->title}}</h3>
+                <div>{{$project->description}}</div>
+            </div>
         @empty
-            <li>No projects yet</li>
+            <div>No projects yet</div>
         @endforelse
-    </ul>
+    </div>
 
 @endsection
 
