@@ -9,9 +9,9 @@
 
     <div class="flex">
         @forelse($projects as $project)
-            <div class="bg-white mr-4 rounded shadow">
-                <h3>{{$project->title}}</h3>
-                <div>{{$project->description}}</div>
+            <div class="bg-white mr-4 p-3 rounded-lg w-1/3">
+                <h3 class="font-normal text-2xl mb-3">{{$project->title}}</h3>
+                <div>{{str_limit($project->description, 250)}}</div>
             </div>
         @empty
             <div>No projects yet</div>
