@@ -2,6 +2,11 @@
 
 @tailwind components;
 
+.button {
+
+  @apply .bg-red-700;
+}
+
 @tailwind utilities;
 
 // Fonts
@@ -12,3 +17,5 @@
 
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
+
+

@@ -627,6 +627,10 @@ video {
   }
 }
 
+.button {
+  background-color: #c53030;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
